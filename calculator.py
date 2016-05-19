@@ -5,12 +5,10 @@ def add():
     return n1 + n2
 
 print("calculator")
-print("ver 0.0.0.0")
+print("ver 0.0.0")
 print("modes: add")
 mode = raw_input('Enter the mode you want:')
 if mode == "add":
-   res = add()
-   print(res)
+   print(add())
 else:
-    print("1")
-
+    print("unknown mode")
