@@ -34,5 +34,5 @@ elif mode == "divide":
 elif mode == "multiply":
     print(multiply())
 else:
-    print Unknown Mode Type
+    print "Unknown Mode Type"
    
