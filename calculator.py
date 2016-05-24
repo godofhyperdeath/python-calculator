@@ -7,27 +7,16 @@ modes.append("Multiply");
 modes.append("Divide");
 modes.append("interest");
 #--variables end--#
-def Simplefloaterest():
-    n1 = float(raw_input('Enter the principal:'))
-    n2 = float(raw_input('Enter the rate:'))
-    n3 = float(raw_input('Enter the time:'))
-    return n1 * n2 * n3
-def add():
-    n1 = float(raw_input('Enter the first number you want:'))
-    n2 = float(raw_input('Enter the second number you want:'))
-    return n1 + n2
-def take():
-    n1 = float(raw_input('Enter the first number you want:'))
-    n2 = float(raw_input('Enter the second number you want:'))
-    return n1 - n2
-def multiply():
-    n1 = float(raw_input('Enter the first number you want:'))
-    n2 = float(raw_input('Enter the second number you want:'))
-    return n1 * n2
-def divide():
-    n1 = float(raw_input('Enter the first number you want:'))
-    n2 = float(raw_input('Enter the second number you want:'))
-    return n1 / n2
+def simpleInterest(p, r, t):
+    return p * r * t
+def add(num1, num2):
+    return num1 + num2
+def take(num1, num2):
+    return num1 - num2
+def multiply(num1, num2):
+    return num1 * num2
+def divide(num1, num2):
+    return num1 / num2
 
 print("Ver " + version)
 print("Modes:")
@@ -35,15 +24,26 @@ for x in modes: print x,
 print("")
 mode = raw_input('Enter the mode you want:')
 if mode == "add":
-   print(add())
+    n1 = float(raw_input('Enter the first number you want:'))
+    n2 = float(raw_input('Enter the second number you want:'))
+    print(add(n1, n2))
 elif mode =="subtract":
-   print(take())
+    n1 = float(raw_input('Enter the first number you want:'))
+    n2 = float(raw_input('Enter the second number you want:'))
+    print(take(n1, n2))
 elif mode == "divide":
-    print(divide())
+    n1 = float(raw_input('Enter the first number you want:'))
+    n2 = float(raw_input('Enter the second number you want:'))
+    print(divide(n1, n2))
 elif mode == "multiply":
-    print(multiply())
+    n1 = float(raw_input('Enter the first number you want:'))
+    n2 = float(raw_input('Enter the second number you want:'))
+    print(multiply(n1, n2))
 elif mode =="interest":
-    print(Simpleinterest())
+    n1 = float(raw_input('Enter the Princapal:'))
+    n2 = float(raw_input('Enter the Intrest Rate:'))
+    n3 = float(raw_input('Enter the Time:'))
+    print(simpleInterest(n1, n2, n3))
 else:
     print "Unknown Mode Type"
    
